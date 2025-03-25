@@ -1,5 +1,8 @@
 # BreathingRateMonitor
 Final project for Digital Signals Processing class.
 
-Created a breathing rate monitor using an Arduino Uno and a temperature sensor. Implemented analog-to-digital signal conversion with noise reduction and filtering.
-Designed the system to emit warning tones based on varying BPM (breaths per minute) ranges, utilizing MATLAB for comprehensive analysis of time domain and frequency spectra.
+An Arduino Uno with a ATMEL MEGA 328P microcontroller was used to create a breathing rate detection system used to detect pneumonia in infants and young children. 
+A LM61 temperature sensor was used to capture the breathing rate in real time. 
+This signal was then filtered and the active filter was determined by comparing the standard deviations of the signals, with the highest energy indicating what was active. 
+Based on the filter that was active, an alarm would output a tone or not play anything at all. 
+There were three specific alarm tones. One for a low breathing rate, one for a high breathing rate and lastly one for a non-functional system
